@@ -21,7 +21,7 @@ const Footer = () => {
               {" "}
               <ImLocation />
             </span>
-            XXXXXXX 122334
+            Pte. Fragata Sarmiento 2101 - CABA
           </li>
           <li>
             <span>
