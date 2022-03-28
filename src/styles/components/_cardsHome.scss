@@ -28,7 +28,7 @@
     background-image: url("../../img/abstract-office-desktop.jpg");
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: right;
     position: relative;
     cursor: pointer;
     overflow: hidden;
@@ -106,19 +106,18 @@
     &:hover {
       filter: brightness(1.2);
       -webkit-filter: brightness(1.2);
-    }
-    &:hover span {
-      color: tomato;
-    }
-    &:hover > .shop {
-      opacity: 1;
-      margin-bottom: 0;
-    }
-
-    @media (max-width: 670px) {
-      &:hover {
-        filter: none;
-        -webkit-filter: none;
+      @media (max-width: 670px) {
+        &:hover {
+          filter: none;
+          -webkit-filter: none;
+        }
+      }
+      &:hover span {
+        color: tomato;
+      }
+      &:hover > .shop {
+        opacity: 1;
+        margin-bottom: 0;
       }
     }
   }
