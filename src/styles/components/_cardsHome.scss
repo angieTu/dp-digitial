@@ -25,7 +25,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     background-color: teal;
-    background-image: url("../../img/abstract-office-desktop.jpg");
+    background-image: url("../../img/business-people-meeting.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: right;
@@ -106,12 +106,7 @@
     &:hover {
       filter: brightness(1.2);
       -webkit-filter: brightness(1.2);
-      @media (max-width: 670px) {
-        &:hover {
-          filter: none;
-          -webkit-filter: none;
-        }
-      }
+
       &:hover span {
         color: tomato;
       }
