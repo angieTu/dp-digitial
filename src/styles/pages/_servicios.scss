@@ -1,0 +1,27 @@
+.servicios-container {
+  min-height: calc(100vh - 80px - 460px);
+  background-image: url("../../img/right-bg-decor.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+  padding: 100px;
+  h3 {
+    font-size: 30px;
+    span {
+      color: #f48040;
+    }
+  }
+  .container-data {
+    width: 50%;
+    line-height: 2;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1050px) {
+    padding: 100px 25px;
+
+    .container-data {
+      width: 75%;
+    }
+  }
+}

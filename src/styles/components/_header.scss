@@ -1,0 +1,161 @@
+header {
+  .header-container {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    min-height: 80px;
+    background-color: #fff;
+    height: 80px !important;
+    position: fixed !important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+    .logo-container {
+      position: absolute;
+      left: 35px;
+
+      .logo {
+        width: 145px;
+      }
+    }
+    .main-nav {
+      display: flex;
+      background-color: #fff;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      position: absolute;
+
+      .nav-item {
+        padding-left: 20px;
+        padding-right: 20px;
+        &:hover {
+          a {
+            color: #fba70b;
+          }
+        }
+        a {
+          color: #7a7a7a;
+          font-weight: 600;
+          font-size: 13px;
+          transition: all 0.3s ease 0s;
+          height: 40px;
+          line-height: 40px;
+          border: transparent;
+          letter-spacing: 1px;
+        }
+        &.submenu {
+          ul {
+            padding-left: 0;
+            position: absolute;
+            width: 220px;
+            box-shadow: 0 2px 28px 0 #0000000f;
+            overflow: hidden;
+            top: 40px;
+            opacity: 0;
+            transform: translateY(-2em);
+            visibility: hidden;
+            z-index: -1;
+            transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+              z-index 0s linear 0.01s;
+            li {
+              margin-left: 0px;
+              padding-left: 0px;
+              padding-right: 0px;
+              &:hover {
+                a::before {
+                  width: 3px;
+                }
+              }
+              a {
+                display: block;
+                background: #fff;
+                color: #7a7a7a !important;
+                padding-left: 20px;
+                height: 40px;
+                line-height: 40px;
+                -webkit-transition: all 0.3s ease 0s;
+                -moz-transition: all 0.3s ease 0s;
+                -o-transition: all 0.3s ease 0s;
+                transition: all 0.3s ease 0s;
+                position: relative;
+                font-size: 13px;
+                border-bottom: 1px solid #f5f5f5;
+                font-weight: 500;
+                &:hover {
+                  background: #fff;
+                  color: #fba70b !important;
+                  padding-left: 25px;
+                }
+                &::before {
+                  content: "";
+                  position: absolute;
+                  width: 0px;
+                  height: 40px;
+                  left: 0px;
+                  top: 0px;
+                  bottom: 0px;
+                  -webkit-transition: all 0.3s ease 0s;
+                  -moz-transition: all 0.3s ease 0s;
+                  -o-transition: all 0.3s ease 0s;
+                  transition: all 0.3s ease 0s;
+                  background: #fba70b;
+                }
+              }
+            }
+          }
+          &:hover {
+            ul {
+              visibility: visible;
+              opacity: 1;
+              z-index: 1;
+              transform: translateY(0%);
+              transition-delay: 0s, 0s, 0.3s;
+            }
+          }
+        }
+      }
+
+      &.show {
+        left: 0;
+        opacity: 1;
+        transition: left 100ms ease, opacity 400ms ease 200ms;
+        overflow: scroll;
+        left: 0;
+      }
+      @media (max-width: 1023px) {
+        flex-direction: column;
+        top: 60px;
+        width: 100%;
+        opacity: 0;
+        left: 100%;
+        transition: opacity 400ms ease, left 100ms ease 600ms;
+
+        .submenu {
+          ul {
+            display: none;
+          }
+        }
+      }
+    }
+    .collapse-nav {
+      display: none;
+      position: absolute;
+      right: 35px;
+      font-size: 27px;
+      cursor: pointer;
+
+      &:hover {
+        svg {
+          color: AiOutlineClose;
+        }
+      }
+      @media (max-width: 1023px) {
+        display: block;
+      }
+    }
+  }
+}
