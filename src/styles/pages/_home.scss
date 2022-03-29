@@ -3,6 +3,7 @@
 
   h3 {
     font-size: 30px;
+    padding: 0 50px;
     span {
       color: #f1556a;
     }
@@ -151,7 +152,7 @@
 
   #about,
   #clientes {
-    padding: 70px 50px;
+    padding: 70px 2px;
   }
 
   #clientes {
@@ -165,7 +166,7 @@
     background-image: url("../../img/left-bg-decor.png");
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 100px 50px;
+    padding: 70px 2px;
   }
 
   /* Animation */
@@ -208,6 +209,12 @@
     }
     h1 {
       font-size: 24px;
+    }
+    #about {
+      padding: 0;
+    }
+    h3 {
+      padding: 0;
     }
   }
 }
