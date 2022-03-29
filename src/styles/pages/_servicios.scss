@@ -4,24 +4,79 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right;
-  padding: 100px;
+  padding: 100px 30px 80px 30px;
   h3 {
     font-size: 30px;
     span {
       color: #f48040;
     }
   }
+  h4 {
+    color: #f48040;
+  }
   .container-data {
-    width: 50%;
     line-height: 2;
     margin: 0 auto;
+
+    .info {
+      width: 70%;
+      margin: 0 auto;
+      ul {
+        li::before {
+          content: "\2022";
+          color: #f48040;
+          font-weight: bold;
+          display: inline-block;
+          width: 2em;
+          margin-left: -1em;
+        }
+      }
+      @media (max-width: 1050px) {
+        padding: 15px 25px;
+        width: 100%;
+
+        .container-data {
+          width: 75%;
+        }
+      }
+    }
+
+    .table {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 70px;
+      padding: 0 15px;
+      div {
+        width: 45%;
+        margin: 0 20px;
+
+        ul {
+          li::before {
+            content: "\2022";
+            color: #f48040;
+            font-weight: bold;
+            display: inline-block;
+            width: 2em;
+            margin-left: -1em;
+          }
+        }
+
+        @media (max-width: 1050px) {
+          margin: 0;
+        }
+      }
+
+      @media (max-width: 1050px) {
+        flex-direction: column;
+        div {
+          width: 100%;
+        }
+      }
+    }
   }
 
   @media (max-width: 1050px) {
-    padding: 100px 25px;
-
-    .container-data {
-      width: 75%;
-    }
+    padding: 50px 2px 50px 10px;
   }
 }

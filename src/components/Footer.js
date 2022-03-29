@@ -21,14 +21,15 @@ const Footer = () => {
               {" "}
               <ImLocation />
             </span>
-            Pte. Fragata Sarmiento 2101 - CABA
+            Pte. Fragata Sarmiento 2101
+            <br /> - CABA
           </li>
           <li>
             <span>
               {" "}
               <MdPhonelinkRing />
             </span>
-            +123456789
+            1139220393
           </li>
           <li>
             <span>
@@ -67,7 +68,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             {" "}
-            Angie Turne
+            Angie Turne 💫
           </a>
         </p>
       </div>

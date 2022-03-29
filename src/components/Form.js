@@ -17,7 +17,10 @@ const Form = () => {
       <div className="container">
         <div className="card"></div>
         <div className="card">
-          <form>
+          <form
+            action="https://formsubmit.co/angie.tur@gmail.com"
+            method="POST"
+          >
             <div className="input-container">
               {" "}
               <input id="name" name="name" type="text" required />{" "}
@@ -37,12 +40,7 @@ const Form = () => {
               <div className="bar"></div>
             </div>
             <div className="button-container">
-              <button
-                onClick={(event) => event.preventDefault}
-                action="mailto:angie.turne@hotmail.com"
-                method="post"
-                encType="text/plain"
-              >
+              <button onClick={(event) => event.preventDefault}>
                 <span>Enviar</span>
               </button>
             </div>
