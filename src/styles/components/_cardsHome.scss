@@ -11,7 +11,8 @@
   background: rgb(8, 11, 17);
   //Prefixes
   display: -ms-grid;
-  -ms-grid-columns: (1fr);
+
+  -ms-grid-columns: repeat(4, 1fr);
 
   & div {
     display: flex;
