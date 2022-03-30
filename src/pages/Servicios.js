@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import "../styles/pages/_servicios.scss";
@@ -15,10 +15,15 @@ import StrainerContact from "../components/servicios/StrainerContact";
 import IVR from "../components/servicios/IVR";
 import Datacenter from "../components/servicios/Datacenter";
 
-const Servicios = () => {
+const Servicios = ({ setShow }) => {
   const { servicioID } = useParams();
 
   const title = servicioID.replace("-", " ").toUpperCase();
+
+  useEffect(() => {
+    setShow(false);
+  }, []);
+
   return (
     <div className="servicios-container">
       <ScrollToTop />

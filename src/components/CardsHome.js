@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import "../styles/components/_cardsHome.scss";
 
-const CardsHome = () => {
+const CardsHome = ({ handleClose }) => {
   const navigate = useNavigate();
 
   const handleClick = (title) => {
@@ -17,7 +17,7 @@ const CardsHome = () => {
   }
 
   return (
-    <div className="grid">
+    <div className="grid" onClick={handleClose}>
       <div
         className="item-1"
         onClick={() => handleClick("potenciales-clientes")}

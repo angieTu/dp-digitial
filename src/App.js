@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./App.css";
 import "./styles/_main.scss";
@@ -18,6 +18,10 @@ import Servicios from "./pages/Servicios";
 import AOS from "aos";
 
 function App() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(show === false ? true : false);
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -26,11 +30,19 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
+        <Header handleClose={handleClose} show={show} />
         <Routes>
           <Route exact path="/" element={<Navigate to="/home" />}></Route>
-          <Route exact path="/home" element={<Home />} />
-          <Route exact path="/servicios/:servicioID" element={<Servicios />} />
+          <Route
+            exact
+            path="/home"
+            element={<Home handleClose={handleClose} />}
+          />
+          <Route
+            exact
+            path="/servicios/:servicioID"
+            element={<Servicios setShow={setShow} />}
+          />
         </Routes>
         <Footer />
       </Router>

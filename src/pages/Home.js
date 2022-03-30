@@ -11,7 +11,7 @@ import ScrollToTop from "../components/ScrollToTop";
 
 // import image from "../img/wepik-2022222-14148.jpeg";
 
-const Home = () => {
+const Home = ({ handleClose }) => {
   return (
     <div className="home-container">
       <ScrollToTop />
@@ -32,7 +32,8 @@ const Home = () => {
               <span>I</span>
               <span>T</span>
               <span>A</span>
-              <span>L</span>|
+              <span>L</span>
+              <span>|</span>
             </div>
             <span className="span" data-aos="fade-left">
               {" "}
@@ -101,7 +102,7 @@ const Home = () => {
           </span>
           ¿Qué hacemos?
         </h3>
-        <CardsHome />
+        <CardsHome handleClose={handleClose} />
       </div>
       <div id="clientes">
         <h3 className="about-title">

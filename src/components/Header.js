@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { NavLink } from "react-router-dom";
 
@@ -8,10 +8,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import "../styles/components/_header.scss";
 import logo from "../img/Logo_transparente.png";
 
-const Header = () => {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(show === false ? true : false);
-
+const Header = ({ handleClose, show }) => {
   return (
     <header>
       <div className="header-container">
@@ -23,12 +20,15 @@ const Header = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/home#hero"
+              onClick={handleClose}
             >
               HOME
             </NavLink>
           </li>
           <li className="nav-item submenu">
-            <a href="/home#about">SERVICIOS</a>
+            <a href="/home#about" onClick={handleClose}>
+              SERVICIOS
+            </a>
             <ul>
               <li>
                 <NavLink to="/servicios/potenciales-clientes">
@@ -79,10 +79,14 @@ const Header = () => {
             </ul>
           </li>
           <li className="nav-item">
-            <a href="/home#clientes">CLIENTES</a>
+            <a href="/home#clientes" onClick={handleClose}>
+              CLIENTES
+            </a>
           </li>
           <li className="nav-item">
-            <a href="/home#contacto">CONTACTO</a>
+            <a href="/home#contacto" onClick={handleClose}>
+              CONTACTO
+            </a>
           </li>
         </ul>
         <div className="collapse-nav" onClick={handleClose}>
