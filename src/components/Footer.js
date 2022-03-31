@@ -42,7 +42,7 @@ const Footer = () => {
         <div className="footer-content">
           {" "}
           <img src={logo} alt="Logo" className="logo" />
-          <div className="wrapper">
+          <div className="social-media">
             {" "}
             <div class="icon facebook">
               <div class="tooltip">Facebook</div>

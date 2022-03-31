@@ -25,7 +25,12 @@ const Servicios = ({ setShow }) => {
   }, []);
 
   return (
-    <div className="servicios-container">
+    <div
+      className="servicios-container"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
       <ScrollToTop />
       <h3 className="about-title">
         <span>

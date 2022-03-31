@@ -119,13 +119,6 @@ header {
         }
       }
 
-      &.show {
-        left: 0;
-        opacity: 1;
-        transition: left 100ms ease, opacity 400ms ease 200ms;
-        overflow: scroll;
-        left: 0;
-      }
       @media (max-width: 1023px) {
         flex-direction: column;
         top: 60px;
@@ -133,7 +126,13 @@ header {
         opacity: 0;
         left: 100%;
         transition: opacity 400ms ease, left 100ms ease 600ms;
-
+        &.show {
+          left: 0;
+          opacity: 1;
+          transition: left 100ms ease, opacity 400ms ease 200ms;
+          overflow: scroll;
+          left: 0;
+        }
         .submenu {
           ul {
             display: none;

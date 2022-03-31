@@ -13,13 +13,43 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const Home = ({ handleClose }) => {
   return (
-    <div className="home-container">
+    <div className="home-container" id="hero">
       <ScrollToTop />
-      <div id="hero" className="waves-container">
+      <div className="waves-container">
         <div className="inner-header flex">
-          {/* <img alt="" src={image} /> */}
-          <div className="header">
-            <div className="disappear">
+          <div className="wrapper">
+            <span className="text">
+              <div className="disappear">
+                <span>D</span>
+                <span style={{ marginRigth: "24px" }}>P</span>
+                {""}
+                <span> {""}</span>
+                <span> {""} </span>
+                {""}
+                <span> D</span>
+                <span>I</span>
+                <span>G</span>
+                <span>I</span>
+                <span>T</span>
+                <span>A</span>
+                <span>L</span>
+              </div>
+            </span>
+
+            <span className="sub" data-aos="fade-up">
+              Agencia de Marketing
+            </span>
+
+            <span className="sub" data-aos="fade-up">
+              LA MANO QUE SU EMPRESA NECESITA EN SOLUCIONES ONLINE.
+            </span>
+            <a className="main-button" href="#about">
+              CONOCE MÁS
+            </a>
+          </div>
+          <div className="gradient"></div>
+          {/* <div className="header"> */}
+          {/* <div className="disappear">
               <span>D</span>
               <span style={{ marginRigth: "24px" }}>P</span>
               {""}
@@ -34,25 +64,18 @@ const Home = ({ handleClose }) => {
               <span>A</span>
               <span>L</span>
               <span>|</span>
-            </div>
-            <span className="span" data-aos="fade-left">
-              {" "}
+            </div> */}
+          {/* <span className="span" data-aos="fade-left">
+             
               Agencia de Marketing
             </span>
-          </div>
-          <p data-aos="fade-up">
+          </div> */}
+          {/* <p data-aos="fade-up">
             LA MANO QUE SU EMPRESA NECESITA EN SOLUCIONES ONLINE.
-            {/* <br /> Trabajamos para aportarle a nuestros clientes la visión
-            necesaria de todas las herramientas disponibles que se encuentran en
-            la web, así como la potenciación de integración con otras
-            tecnologías. Nuestra experiencia y recursos especializados nos
-            permite brindar un servicio de óptima calidad. Gracias a la
-            constante capacitación e información podemos tener una visión
-            actualizada de todos los proyectos que llevamos adelante. */}
           </p>
           <a className="main-button" href="#about">
             CONOCE MÁS
-          </a>
+          </a> */}
         </div>
 
         <div>
@@ -95,7 +118,7 @@ const Home = ({ handleClose }) => {
         </div>
       </div>
       <div id="about">
-        <h3 className="about-title">
+        <h3 className="about-title" data-aos="zoom-out">
           <span>
             {" "}
             <BiChevronRight />
@@ -105,7 +128,7 @@ const Home = ({ handleClose }) => {
         <CardsHome handleClose={handleClose} />
       </div>
       <div id="clientes">
-        <h3 className="about-title">
+        <h3 className="about-title" data-aos="zoom-out">
           <span>
             {" "}
             <BiChevronRight />

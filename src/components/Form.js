@@ -7,7 +7,7 @@ import { BiChevronRight } from "react-icons/bi";
 const Form = () => {
   return (
     <>
-      <h3 className="about-title">
+      <h3 className="about-title" data-aos="zoom-out">
         <span>
           {" "}
           <BiChevronRight />

@@ -20,7 +20,10 @@ import AOS from "aos";
 function App() {
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(show === false ? true : false);
+  const handleClose = () => {
+    setShow(show === false ? true : false);
+    console.log("click", show);
+  };
 
   useEffect(() => {
     AOS.init({
@@ -30,7 +33,7 @@ function App() {
   return (
     <>
       <Router>
-        <Header handleClose={handleClose} show={show} />
+        <Header setShow={setShow} show={show} handleClose={handleClose} />
         <Routes>
           <Route exact path="/" element={<Navigate to="/home" />}></Route>
           <Route

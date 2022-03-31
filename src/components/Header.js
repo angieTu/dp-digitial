@@ -7,8 +7,9 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import "../styles/components/_header.scss";
 import logo from "../img/Logo_transparente.png";
+import ScrollToTop from "./ScrollToTop";
 
-const Header = ({ handleClose, show }) => {
+const Header = ({ setShow, show, handleClose }) => {
   return (
     <header>
       <div className="header-container">
@@ -20,13 +21,16 @@ const Header = ({ handleClose, show }) => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/home#hero"
-              onClick={handleClose}
+              onClick={() => {
+                setShow(false);
+                <ScrollToTop />;
+              }}
             >
               HOME
             </NavLink>
           </li>
           <li className="nav-item submenu">
-            <a href="/home#about" onClick={handleClose}>
+            <a href="/home#about" onClick={() => setShow(false)}>
               SERVICIOS
             </a>
             <ul>
@@ -79,12 +83,12 @@ const Header = ({ handleClose, show }) => {
             </ul>
           </li>
           <li className="nav-item">
-            <a href="/home#clientes" onClick={handleClose}>
+            <a href="/home#clientes" onClick={() => setShow(false)}>
               CLIENTES
             </a>
           </li>
           <li className="nav-item">
-            <a href="/home#contacto" onClick={handleClose}>
+            <a href="/home#contacto" onClick={() => setShow(false)}>
               CONTACTO
             </a>
           </li>
