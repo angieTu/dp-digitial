@@ -62,6 +62,10 @@ footer {
           cursor: pointer;
           transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
+          a {
+            color: black;
+          }
+
           &:hover {
             .tooltip {
               top: -45px;
@@ -116,6 +120,19 @@ footer {
           .tooltip,
           .tooltip::before {
             background-color: #e1306c;
+            color: #ffffff;
+          }
+        }
+
+        .whatsapp:hover {
+          background-color: #00bb2d;
+          color: #ffffff;
+          .tooltip,
+          .tooltip::before {
+            background-color: #00bb2d;
+            color: #ffffff;
+          }
+          a {
             color: #ffffff;
           }
         }

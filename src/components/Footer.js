@@ -8,6 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
 import { MdPhonelinkRing } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
+import { BsWhatsapp } from "react-icons/bs";
 
 const Footer = () => {
   const yearCopyright = new Date().getFullYear();
@@ -54,6 +55,18 @@ const Footer = () => {
               <div className="tooltip">Instagram</div>
               <span>
                 <FaInstagram />
+              </span>
+            </div>
+            <div class="icon whatsapp">
+              <div class="tooltip">Whatsapp</div>
+              <span>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=5491157220949&text=Me+interesa+más+información&app_absent=0"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <BsWhatsapp />
+                </a>
               </span>
             </div>
           </div>
