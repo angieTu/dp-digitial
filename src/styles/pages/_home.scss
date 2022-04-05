@@ -1,5 +1,13 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .home-container {
-  min-height: calc(100vh - 80px - 460px);
+  min-height: calc(100vh - 436px);
   overflow: hidden;
 
   h3 {

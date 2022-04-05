@@ -9,8 +9,6 @@ import { BiChevronRight } from "react-icons/bi";
 import Form from "../components/Form";
 import ScrollToTop from "../components/ScrollToTop";
 
-// import image from "../img/wepik-2022222-14148.jpeg";
-
 const Home = ({ handleClose }) => {
   return (
     <div className="home-container" id="hero">
@@ -48,34 +46,6 @@ const Home = ({ handleClose }) => {
             </a>
           </div>
           <div className="gradient"></div>
-          {/* <div className="header"> */}
-          {/* <div className="disappear">
-              <span>D</span>
-              <span style={{ marginRigth: "24px" }}>P</span>
-              {""}
-              <span> {""}</span>
-              <span> {""} </span>
-              {""}
-              <span> D</span>
-              <span>I</span>
-              <span>G</span>
-              <span>I</span>
-              <span>T</span>
-              <span>A</span>
-              <span>L</span>
-              <span>|</span>
-            </div> */}
-          {/* <span className="span" data-aos="fade-left">
-             
-              Agencia de Marketing
-            </span>
-          </div> */}
-          {/* <p data-aos="fade-up">
-            LA MANO QUE SU EMPRESA NECESITA EN SOLUCIONES ONLINE.
-          </p>
-          <a className="main-button" href="#about">
-            CONOCE MÁS
-          </a> */}
         </div>
 
         <div>

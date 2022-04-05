@@ -20,23 +20,25 @@ const Form = () => {
           <form
             action="https://formsubmit.co/angie.tur@gmail.com"
             method="POST"
+            target="_blank"
           >
             <div className="input-container">
               {" "}
+              <input type="hidden" name="_captcha" value="false" />
               <input id="name" name="name" type="text" required />{" "}
-              <label for="name">Nombre</label>
+              <label htmlFor="name">Nombre</label>
               <div className="bar"></div>
             </div>
             <div className="input-container">
               {" "}
               <input id="email" name="email" type="email" required />{" "}
-              <label for="email">E-mail</label>
+              <label htmlFor="email">E-mail</label>
               <div className="bar"></div>
             </div>
             <div className="input-container">
               {" "}
               <textarea id="msg" name="msg"></textarea>{" "}
-              <label for="msg">Mensaje </label>
+              <label htmlFor="msg">Mensaje </label>
               <div className="bar"></div>
             </div>
             <div className="button-container">

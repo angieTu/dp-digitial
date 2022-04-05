@@ -16,7 +16,7 @@ import img12 from "../img/3m.png";
 
 const Carousel = () => {
   return (
-    <div class="container-clientes">
+    <div className="container-clientes">
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <img src={img2} alt="" />
       </div>

@@ -1,6 +1,6 @@
 .servicios-container {
   min-height: calc(100vh - 80px - 460px);
-  background-image: url("../../img/right-bg-decor.png");
+  background-image: url("../../img/Copia\ de\ right-bg-decor\ 2.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right;
@@ -19,7 +19,7 @@
     margin: 0 auto;
 
     .info {
-      width: 70%;
+      width: 55%;
       margin: 0 auto;
       ul {
         li::before {
@@ -76,6 +76,9 @@
     }
   }
 
+  @media (max-width: 1234px) {
+    background-image: url("../../img/right-bg-decor.png");
+  }
   @media (max-width: 1050px) {
     padding: 50px 2px 50px 10px;
   }

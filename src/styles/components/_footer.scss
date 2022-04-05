@@ -136,6 +136,18 @@ footer {
             color: #ffffff;
           }
         }
+        .tiktok:hover {
+          background-color: black;
+          color: #ffffff;
+          .tooltip,
+          .tooltip::before {
+            background-color: black;
+            color: #ffffff;
+          }
+          a {
+            color: #ffffff;
+          }
+        }
       }
     }
   }
