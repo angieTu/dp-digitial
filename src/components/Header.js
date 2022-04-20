@@ -9,18 +9,18 @@ import "../styles/components/_header.scss";
 import logo from "../img/Logo_transparente.png";
 import ScrollToTop from "./ScrollToTop";
 
-const Header = ({ setShow, show, handleClose }) => {
+const Header = ({ setShow, show, handleClose, page }) => {
   return (
     <header>
       <div className="header-container">
-        <NavLink to="/home#hero" className="logo-container">
+        <NavLink to="/" className="logo-container">
           <img className="logo" src={logo} alt="Logo" />
         </NavLink>
         <ul className={show === true ? "main-nav show" : "main-nav"}>
           <li className="nav-item">
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
-              to="/home#hero"
+              to="/"
               onClick={() => {
                 setShow(false);
                 <ScrollToTop />;
@@ -30,7 +30,10 @@ const Header = ({ setShow, show, handleClose }) => {
             </NavLink>
           </li>
           <li className="nav-item submenu">
-            <a href="/home#about" onClick={() => setShow(false)}>
+            <a
+              href={page === "home" ? "/#about" : "/"}
+              onClick={() => setShow(false)}
+            >
               SERVICIOS
             </a>
             <ul>
@@ -83,12 +86,18 @@ const Header = ({ setShow, show, handleClose }) => {
             </ul>
           </li>
           <li className="nav-item">
-            <a href="/home#clientes" onClick={() => setShow(false)}>
+            <a
+              href={page === "home" ? "/#clientes" : "/"}
+              onClick={() => setShow(false)}
+            >
               CLIENTES
             </a>
           </li>
           <li className="nav-item">
-            <a href="/home#contacto" onClick={() => setShow(false)}>
+            <a
+              href={page === "home" ? "/#contacto" : "/"}
+              onClick={() => setShow(false)}
+            >
               CONTACTO
             </a>
           </li>

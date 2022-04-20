@@ -38,7 +38,7 @@ const Footer = () => {
               {" "}
               <AiOutlineMail />
             </span>
-            email@email.com
+            info@dpdigital.com.ar
           </li>
         </ul>
         <div className="footer-content">

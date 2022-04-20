@@ -18,7 +18,7 @@ const Form = () => {
         <div className="card"></div>
         <div className="card">
           <form
-            action="https://formsubmit.co/angie.tur@gmail.com"
+            action="https://formsubmit.co/info@dpdigital.com.ar"
             method="POST"
             target="_blank"
           >

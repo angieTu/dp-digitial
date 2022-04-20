@@ -4,17 +4,12 @@ import "./App.css";
 import "./styles/_main.scss";
 import "aos/dist/aos.css";
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Servicios from "./pages/Servicios";
+import Error from "./pages/Error";
 import AOS from "aos";
 import { Loading } from "@nextui-org/react";
 
@@ -50,19 +45,25 @@ function App() {
         </div>
       ) : (
         <Router>
-          <Header setShow={setShow} show={show} handleClose={handleClose} />
           <Routes>
-            <Route exact path="/" element={<Navigate to="/home" />}></Route>
             <Route
               exact
-              path="/home"
-              element={<Home handleClose={handleClose} />}
+              path="/"
+              element={
+                <Home handleClose={handleClose} setShow={setShow} show={show} />
+              }
             />
             <Route
-              exact
               path="/servicios/:servicioID"
-              element={<Servicios setShow={setShow} />}
+              element={
+                <Servicios
+                  handleClose={handleClose}
+                  setShow={setShow}
+                  show={show}
+                />
+              }
             />
+            <Route path="/*" element={<Error />} />
           </Routes>
           <Footer />
         </Router>
