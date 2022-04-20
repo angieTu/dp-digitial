@@ -11,9 +11,9 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const Home = ({ handleClose }) => {
   return (
-    <div className="home-container" id="hero">
+    <div className="home-container">
       <ScrollToTop />
-      <div className="waves-container">
+      <div className="waves-container" id="hero">
         <div className="inner-header flex">
           <div className="wrapper">
             <span className="text">
