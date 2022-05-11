@@ -8,7 +8,7 @@ const CardsHome = ({ handleClose }) => {
   const navigate = useNavigate();
 
   const handleClick = (title) => {
-    navigate(`/servicios/${title}`);
+    navigate(`/${title}`);
   };
 
   const dates = document.querySelectorAll(".shop");

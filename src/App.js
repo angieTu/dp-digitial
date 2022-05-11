@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import "./App.css";
+// import "./App.css";
 import "./styles/_main.scss";
 import "aos/dist/aos.css";
 
@@ -54,7 +54,7 @@ function App() {
               }
             />
             <Route
-              path="/servicios/:servicioID"
+              path="/:servicioID"
               element={
                 <Servicios
                   handleClose={handleClose}
@@ -63,7 +63,7 @@ function App() {
                 />
               }
             />
-            <Route path="/*" element={<Error />} />
+            <Route path="*" element={<Error />} />
           </Routes>
           <Footer />
         </Router>

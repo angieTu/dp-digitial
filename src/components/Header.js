@@ -7,7 +7,6 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import "../styles/components/_header.scss";
 import logo from "../img/Logo_transparente.png";
-import ScrollToTop from "./ScrollToTop";
 
 const Header = ({ setShow, show, handleClose, page }) => {
   return (
@@ -20,10 +19,10 @@ const Header = ({ setShow, show, handleClose, page }) => {
           <li className="nav-item">
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
-              to="/"
+              to="/#hero"
               onClick={() => {
                 setShow(false);
-                <ScrollToTop />;
+                window.scrollTo(0, 0);
               }}
             >
               HOME
@@ -38,56 +37,46 @@ const Header = ({ setShow, show, handleClose, page }) => {
             </a>
             <ul>
               <li>
-                <NavLink to="/servicios/potenciales-clientes">
+                <NavLink to="/potenciales-clientes">
                   Potenciales Clientes
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/servicios/sms-marketing">SMS Marketing</NavLink>
+                <NavLink to="/sms-marketing">SMS Marketing</NavLink>
               </li>
               <li>
                 {" "}
-                <NavLink to="/servicios/marketing-online">
-                  Marketing Online
-                </NavLink>
+                <NavLink to="/marketing-online">Marketing Online</NavLink>
               </li>
               <li>
                 {" "}
-                <NavLink to="/servicios/google-adwords">Google ADWORDS</NavLink>
+                <NavLink to="/google-adwords">Google ADWORDS</NavLink>
               </li>
               <li>
                 {" "}
-                <NavLink to="/servicios/email-marketing">
-                  E-mail Marketing
-                </NavLink>
+                <NavLink to="/email-marketing">E-mail Marketing</NavLink>
               </li>
               <li>
                 {" "}
-                <NavLink to="/servicios/desarrollo-web">
-                  Diseño y Desarrollo Web
-                </NavLink>
+                <NavLink to="/desarrollo-web">Diseño y Desarrollo Web</NavLink>
               </li>
               <li>
                 {" "}
-                <NavLink to="/servicios/strainer-contact">
-                  Strainer Contact
-                </NavLink>
+                <NavLink to="/strainer-contact">Strainer Contact</NavLink>
               </li>
               <li>
                 {" "}
-                <NavLink to="/servicios/ivr">IVR</NavLink>
+                <NavLink to="/ivr">IVR</NavLink>
               </li>
               <li>
                 {" "}
-                <NavLink to="/servicios/datacenter">
-                  Servicios de Datacenter
-                </NavLink>
+                <NavLink to="/datacenter">Servicios de Datacenter</NavLink>
               </li>
             </ul>
           </li>
           <li className="nav-item">
             <a
-              href={page === "home" ? "/#clientes" : "/"}
+              href={page === "home" ? "#clientes" : "/"}
               onClick={() => setShow(false)}
             >
               CLIENTES
@@ -95,7 +84,7 @@ const Header = ({ setShow, show, handleClose, page }) => {
           </li>
           <li className="nav-item">
             <a
-              href={page === "home" ? "/#contacto" : "/"}
+              href={page === "home" ? "#contacto" : "/"}
               onClick={() => setShow(false)}
             >
               CONTACTO

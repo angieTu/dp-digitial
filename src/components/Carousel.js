@@ -18,37 +18,37 @@ const Carousel = () => {
   return (
     <div className="container-clientes">
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <img src={img2} alt="" />
+        <img src={img2} alt="logo-audi" />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <img src={img3} alt="" />
+        <img src={img3} alt="logo-fiat" />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <img src={img4} alt="" />
+        <img src={img4} alt="logo-ford" />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <img src={img5} alt="" />
+        <img src={img5} alt="logo-peugeot" />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <img src={img6} alt="" />
+        <img src={img6} alt="logo-renault" />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <img src={img7} alt="" />
+        <img src={img7} alt="logo-toyota" />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <img src={img8} alt="" />
+        <img src={img8} alt="logo-volkswagen" />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <img src={img9} alt="" />
+        <img src={img9} alt="logo-municipalidad-san-isidro" />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <img src={img10} alt="" />
+        <img src={img10} alt="logo-movistar" />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <img src={img11} alt="" />
+        <img src={img11} alt="logo-chubb" />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <img src={img12} alt="" />
+        <img src={img12} alt="logo-3M" />
       </div>
     </div>
   );

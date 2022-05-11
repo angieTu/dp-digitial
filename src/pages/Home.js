@@ -19,9 +19,10 @@ const Home = ({ handleClose, setShow, show }) => {
         show={show}
         handleClose={handleClose}
       />
-      <div className="home-container">
+      <div id="hero" className="home-container">
         <ScrollToTop />
-        <div id="hero" className="waves-container">
+        <div className="waves-container">
+          <h1>DP Digital</h1>
           <div className="inner-header flex">
             <div className="wrapper">
               <span className="text">
@@ -42,9 +43,9 @@ const Home = ({ handleClose, setShow, show }) => {
                 </div>
               </span>
 
-              <span className="sub" data-aos="fade-up">
+              <h3 className="sub" data-aos="fade-up">
                 Agencia de Marketing
-              </span>
+              </h3>
 
               <span className="sub" data-aos="fade-up">
                 LA MANO QUE SU EMPRESA NECESITA EN SOLUCIONES ONLINE.
@@ -95,7 +96,7 @@ const Home = ({ handleClose, setShow, show }) => {
             </svg>
           </div>
         </div>
-        <div id="about">
+        <main id="about">
           <h3 className="about-title" data-aos="zoom-out">
             <span>
               {" "}
@@ -104,8 +105,8 @@ const Home = ({ handleClose, setShow, show }) => {
             ¿Qué hacemos?
           </h3>
           <CardsHome handleClose={handleClose} />
-        </div>
-        <div id="clientes">
+        </main>
+        <section id="clientes">
           <h3 className="about-title" data-aos="zoom-out">
             <span>
               {" "}
@@ -114,10 +115,10 @@ const Home = ({ handleClose, setShow, show }) => {
             ¿Quiénes confían en nosotros?
           </h3>
           <Carousel />
-        </div>
-        <div id="contacto" className="form-container">
+        </section>
+        <section id="contacto" className="form-container">
           <Form />
-        </div>
+        </section>
       </div>
     </>
   );
